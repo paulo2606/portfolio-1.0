@@ -1,0 +1,197 @@
+/* Reset de CSS padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Valores para padronizar toda a página */
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+}
+
+/* Background particles */
+#particles-js {
+    background: #161616;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Ajustes para o nav */
+header nav {
+    font-size: larger;
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 12px;
+    position: relative;
+    font-weight: 600;
+}
+
+/* Menu hamburguer */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+/* Animação hover de linha abaixo dos links do nav */
+header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: 0.3s;
+}
+
+header nav a:hover::after {
+    right: 0;
+}
+
+/* Estilo para o main */
+main {
+    padding: 10%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 50px;
+    color: white;
+}
+
+/* Ícones com redes sociais */
+.intro .contact a {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.intro .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .contact a:hover {
+    color: #0077ff;
+}
+
+.intro h1 {
+    font-size: 150px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 0.8;
+    
+}
+
+.cards-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+        line-height: 1em;
+        overflow: hidden;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .contact {
+        display: none;
+    }
+
+    .intro h1 {
+        font-size: 76px;
+        width: 600px;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+
+    header nav {
+        position: fixed;
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: 0.8s;
+    }
+
+    header nav.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-top: 30px;
+        position: fixed;
+    }
+
+    .cards-mobile {
+        display: block;
+        color: #fff;
+    }
+    
+    .content-card{
+        margin-top: 20px;
+        display: flex;
+        border-radius: 1em;
+        padding: 20px;
+        background: #ffffff28;
+        gap: 20px;
+        font-size: 20px;
+        align-items: center;
+        font-weight: 900;
+    }
+
+    .content-card{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- /* fonte do titulo principal */ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- font awasome para icones -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <title>Dev - Paulo</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <a href="#">Projetos</a>
+            <a href="pages/sobre.html">Sobre</a>
+            <a href="#">Formações</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+        <script src="../js/mobile-menu.js"></script>
+    </header>
+
+    <main>
+        <div class="intro">
+            <div class="contact">
+                <a href="https://linkedin.com/in/henriqpa" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/paulo2606/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/5541998352918" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/p4uloww/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <h1>Paulo <br> Henrique</h1>
+        </div>
+
+        <div class="cards-mobile">
+            <a href="https://linkedin.com/in/henriqpa" target="_blank" class="content-card">
+                <i class="fa-brands fa-linkedin-in" style="color: #0077ff;"></i>
+                Linkedin
+            </a>
+
+            <a href="https://github.com/paulo2606/" target="_blank" class="content-card">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://wa.me/5541998352918" target="_blank" class="content-card">
+                <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                Whatsapp
+            </a>
+
+            <a href="https://www.instagram.com/p4uloww/" target="_blank" class="content-card">
+                <i class="fa-brands fa-instagram" style="background: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                Instagram
+            </a>
+        </div>
+    </main>
+
+    <script src="../js/particles.min.js"></script>
+    <script>
+        particlesJS({
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 150,
+                        "size": 10,
+                        "duration": 0.47948982282851027,
+                        "opacity": 1,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
