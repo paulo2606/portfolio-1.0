@@ -1,0 +1,49 @@
+/* titulo sobre */
+.title-about-me {
+    width: 100%;
+    font-style: italic;
+    margin-top: 30%;
+
+    span {
+        color: #0077ff;
+    }
+}
+
+.title-about-me h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 0.8;
+    font-size: xxx-large;
+    margin-left: 35px;
+}
+
+/* sobre mim */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.about-me img {
+    border-radius: 65% 35% 31% 69% / 39% 57% 43% 61%;
+    width: 80%;
+    object-fit: cover;
+    filter: drop-shadow(20px 30px 20px rgb(0, 0, 0));
+}
+
+.about-me p {
+    text-indent: 1.8em;
+    width: 50%;
+    text-align: justify;
+}
+
+.about-me p a {
+    font-weight: 900;
+    color: #0077ff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
