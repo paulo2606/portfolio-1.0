@@ -47,3 +47,62 @@
         text-decoration: underline;
     }
 }
+
+/* responsividade */
+
+@media (max-width: 768px){
+    .title-about-me {
+        width: 100%;
+        font-style: italic;
+        margin-top: 30%;
+        
+        span {
+            color: #0077ff;
+        }
+    }
+    
+    .title-about-me h1 {
+        font-size: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        line-height: 0.8;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    
+    /* sobre mim */
+    .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .about-me img {
+        border-radius: 65% 35% 31% 69% / 39% 57% 43% 61%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+        filter: drop-shadow(20px 30px 20px rgb(0, 0, 0));
+    }
+    
+    .about-me p {
+        text-indent: 1.8em;
+        width: 100%;
+        text-align: justify;
+        margin-top: -60px;
+        line-height: 1.5em;
+    }
+    
+    .about-me p a {
+        font-weight: 900;
+        color: #0077ff;
+        text-decoration: none;
+    
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}

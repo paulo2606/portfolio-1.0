@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Valores para padronizar toda a página */
 body {
     width: 80%;
@@ -99,7 +103,7 @@ main {
     transition: 0.5s;
 }
 
-.intro .contact{
+.intro .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +119,7 @@ main {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     line-height: 0.8;
-    
+
 }
 
 .cards-mobile {
@@ -126,7 +130,7 @@ main {
     body {
         width: 90%;
         line-height: 1em;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .intro {
@@ -169,16 +173,16 @@ main {
     .mobile-menu {
         display: block;
         margin-top: 30px;
-        position: fixed;
+        position: absolute;
     }
 
     .cards-mobile {
         display: block;
         color: #fff;
     }
-    
-    .content-card{
-        margin-top: 20px;
+
+    .content-card {
+        margin-top: 5px;
         display: flex;
         border-radius: 1em;
         padding: 20px;
@@ -189,9 +193,9 @@ main {
         font-weight: 900;
     }
 
-    .content-card{
+    .content-card {
         text-decoration: none;
         color: #fff;
     }
-    
+
 }
